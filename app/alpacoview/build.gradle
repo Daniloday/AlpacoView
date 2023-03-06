@@ -28,6 +28,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -46,7 +52,7 @@ publishing {
     publications {
         release(MavenPublication) {
             groupId = 'com.github.daniloday'
-            artifactId = 'com.missclick.alpacoview'
+            artifactId = 'AlpacoView'
             version = '1.0.0'
 
             afterEvaluate {
