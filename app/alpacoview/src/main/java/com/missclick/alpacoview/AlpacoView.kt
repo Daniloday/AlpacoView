@@ -19,7 +19,7 @@ import java.io.File
 
 class AlpacoView(context : Context) : WebView(context) {
 
-    private var file : ValueCallback<Array<Uri>>? = null
+    private var file : ValueCallback<Array<Uri>>? =  null
     private var uri : Uri? = null
 
 
