@@ -41,3 +41,17 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 }
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.daniloday'
+            artifactId = 'com.missclick.alpacoview'
+            version = '1.0.0'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
