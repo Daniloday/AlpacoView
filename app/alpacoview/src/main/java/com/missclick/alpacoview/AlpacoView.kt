@@ -8,6 +8,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
+import android.util.AttributeSet
 import android.view.ViewGroup
 import android.webkit.*
 import androidx.activity.compose.ManagedActivityResultLauncher
@@ -17,7 +18,7 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.FileProvider
 import java.io.File
 
-class AlpacoView(context : Context) : WebView(context) {
+class AlpacoView(context : Context, attrs: AttributeSet? = null) : WebView(context) {
 
     private var file : ValueCallback<Array<Uri>>? =  null
     private var uri : Uri? = null
