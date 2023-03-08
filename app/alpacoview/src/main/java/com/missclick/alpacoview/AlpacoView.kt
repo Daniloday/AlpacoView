@@ -39,7 +39,6 @@ class AlpacoView(context : Context) : WebView(context) {
          )
          settings.domStorageEnabled = true
          settings.allowFileAccessFromFileURLs = true
-         settings.setAppCacheEnabled(true)
          settings.mixedContentMode = 0
          settings.cacheMode = WebSettings.LOAD_DEFAULT
          settings.loadWithOverviewMode = true
