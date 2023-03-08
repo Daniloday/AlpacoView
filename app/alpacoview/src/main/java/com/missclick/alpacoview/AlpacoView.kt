@@ -18,7 +18,7 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.FileProvider
 import java.io.File
 
-class AlpacoView(context : Context, attrs: AttributeSet? = null) : WebView(context) {
+class AlpacoView(context : Context, attrs: AttributeSet? = null) : WebView(context,attrs) {
 
     private var file : ValueCallback<Array<Uri>>? =  null
     private var uri : Uri? = null
